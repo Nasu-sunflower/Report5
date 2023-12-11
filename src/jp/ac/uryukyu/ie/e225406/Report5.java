@@ -6,6 +6,13 @@ public class Report5 {
 
         String str = null;
 
-        System.out.println(str.length());
+        // System.out.println(str.length());
+
+        try {
+            System.out.println("String length: " + str.length());
+        } catch (NullPointerException e) {
+            // 実行時エラー（NullPointerException）が発生した場合の処理
+            System.err.println("NullPointerException caught: " + e.getMessage());
+        }
     }    
 }
